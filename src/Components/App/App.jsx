@@ -4,6 +4,7 @@ import List from "../Statistics/Statistics";
 import Buttons from "../FeedbackButtons/FeedbackButtons";
 import Notification from "../Notification/Notification";
 import SecondTitle from "../SecondTitle/SecondTitle";
+import GlobalStyle from "./App.styled";
 
 class App extends Component {
   state = {
@@ -43,6 +44,7 @@ class App extends Component {
 
     return (
       <>
+        <GlobalStyle />
         <Section
           title={"Please leave feedback"}
           totalFeedbacks={totalFeedbacks}
